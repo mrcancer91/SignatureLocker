@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.lqd.getdatatest.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+
+    <com.example.signaturelockscreen.MyCustomView
+        android:id="@+id/mCusView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="15"
+        android:background="#ffffff" >
+    </com.example.signaturelockscreen.MyCustomView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="85"
+        android:baselineAligned="false"
+        android:orientation="horizontal" 
+        android:weightSum="100">
+  	<Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_gravity="left"
+             android:layout_weight="40"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="40"
+            android:text="OK" />
+      
+    </LinearLayout>
+
+</LinearLayout>
